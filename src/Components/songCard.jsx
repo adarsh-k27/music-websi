@@ -48,7 +48,7 @@ function SongCard ({ type, data, deleteBtn,index }) {
     >
       <div className='w-40 min-w-[160px] h-40 min-h-[160px rounded-lg drop-shadow-lg overflow-hidden'>
         <img
-          src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/AR_Rahman_At_The_%E2%80%98Marvel_Anthem%E2%80%99_Launch.jpg/330px-AR_Rahman_At_The_%E2%80%98Marvel_Anthem%E2%80%99_Launch.jpg'
+          src={data?.imageUrl}
           alt=''
           className='w-36 min-w[9rem] h-40 min-h-[10rem] object-cover'
         />
