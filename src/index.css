@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 0;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* .rhap_play-pause-button  { 
+    background-color: #ff0000 !important;
+} */
+.rhap_container {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.rhap_play-pause-button {
+    color: #ff0000 !important;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.rhap_play-pause-button:hover {
+    transform: scale(1.2)
+}
+
+.rhap_rewind-button,
+.rhap_forward-button,
+.rhap_skip-button,
+.rhap_volume-button,
+.rhap_repeat-button {
+    transition: all 0.3s ease-in-out
+}
+
+.rhap_forward-button:hover,
+.rhap_repeat-button:hover,
+.rhap_rewind-button:hover,
+.rhap_skip-button:hover,
+.rhap_volume-button:hover {
+    transform: scale(1.2);
+    color: #555 !important;
+}
+
+.rhap_progress-filled {
+    background-color: #ff0000 !important;
+}
+
+.rhap_progress-indicator,
+.rhap_volume-indicator {
+    background-color: #b4b4b4 !important;
+}
+
+.rhap_progress-indicator:hover,
+.rhap_volume-indicator:hover {
+    transform: scale(1.2);
+}
+
+.rhap_download-progress,
+.rhap_volume-bar {
+    background-color: #ff000033 !important;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
