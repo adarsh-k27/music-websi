@@ -21,7 +21,7 @@ function CreateSong () {
     languageFilter,
     catogeryFilter
   } = useContext(Music_Context).state
-  const { AlbumSave, ArtistSave, SongLength } = useContext(Music_Context)
+  const { AlbumSave, ArtistSave, SongSave } = useContext(Music_Context)
   const [songName, setSongName] = useState('')
   const [Loading, setLoading] = useState(false)
   const [audioLoading, setAudioLoading] = useState(false)
@@ -90,7 +90,8 @@ function CreateSong () {
       catogery: catogeryFilter
     }
     console.log("songData",data);
-    SaveSong(data, SongLength, setSaveSongBtn)
+    SaveSong(data, SongSave
+, setSaveSongBtn)
   }
 
   return (
