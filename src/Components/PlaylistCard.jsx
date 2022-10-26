@@ -15,7 +15,7 @@ function PlaylistCard () {
   }
   
   return (
-    <div className='absolute -bottom-20 left-5 bg-white/75 overflow-y-scroll flex flex-col gap-1 w-[350px] max-w-[350px] h-[450px] max-h-[450px]'>
+    <div className='absolute -bottom-20 left-5 bg-red-500 overflow-y-scroll flex flex-col gap-1 w-[350px] max-w-[350px] h-[450px] max-h-[450px]'>
       {allSongs &&
         allSongs.map((song, index) => (
           <div

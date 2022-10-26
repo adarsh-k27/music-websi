@@ -42,7 +42,7 @@ function MusicPlayer () {
             console.log('clillllll', isPlaylist)
             SetPlayList(prev => !prev)
           }}
-          className='flex items-start'
+          className='flex items-start cursor-pointer'
         />
       </div>
       <div className='flex-1 w-full'>
