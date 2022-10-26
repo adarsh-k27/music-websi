@@ -7,7 +7,7 @@ import { Music_Context } from '../context/index'
 import { GetAllSongs } from '../apiHelper/song'
 import {MusicPlayer} from '../Components/index'
 import SongCard from './songCard'
-function DashboardSongs () {
+function DashboardSongs ({deleteBtn}) {
   const {allSongs,Playing}=useContext(Music_Context).state
   const {SetAllSongs}=useContext(Music_Context)
   const [isFocus, setFocus] = useState(true)
@@ -25,7 +25,7 @@ function DashboardSongs () {
         <div className='w-full h-auto flex flex-wrap gap-4 items-center justify-center'>
           {
             allSongs && allSongs.map((song,index)=>{
-              return <SongCard type={'song'} data={song} deleteBtn={true} index={index}/>
+              return <SongCard type={'song'} data={song} deleteBtn={deleteBtn} index={index} />
 
             })
           }

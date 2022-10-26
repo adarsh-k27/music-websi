@@ -92,7 +92,7 @@ function Dashboard () {
           <Route path='/user' element={<DashBoardUser />}></Route>
           <Route path='/artist' element={<DashBoardArtist/>} ></Route>
           <Route path='/album' element={<DashBoardAlbum/>} ></Route>
-          <Route path='/song' element={<DashBoardSongs />}></Route>
+          <Route path='/song' element={<DashBoardSongs deleteBtn={true} />}></Route>
           <Route path='/new-song' element={<CreateSong/>}>
             {' '}
           </Route>

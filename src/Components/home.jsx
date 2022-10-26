@@ -7,7 +7,7 @@ function Home () {
   return (
     <div className='w-screen h-screen bg-white'>
       <Header />
-      <DashBoardSongs />
+      <DashBoardSongs deleteBtn={false} />
     </div>
   )
 }
