@@ -105,7 +105,7 @@ function Header () {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 0 }}
-          className='hidden group-hover:block absolute top-[3.5rem] right-20 px-6 py-5 h-auto w-52   flex-col gap-2 items-center '
+          className='hidden group-hover:block absolute top-[3.5rem] right-20 px-6 py-5 h-auto w-52 z-50 flex-col gap-2 items-center '
         >
           <div className='bg-white/70 shadow-lg py-3 flex flex-col items-center'>
             <NavLink to={'/profile'}>

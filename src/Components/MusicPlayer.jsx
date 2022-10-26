@@ -11,7 +11,7 @@ function MusicPlayer () {
   const {SetPlaying, SetPlayingIndex}=useContext(Music_Context)
   const [isPlaylist, SetPlayList] = useState(false)
   return (
-    <div className='w-full h-full flex flex-row justify-center items-center gap-3 '>
+    <div className='w-full h-full flex flex-row justify-center items-center gap-3 z-50 bg-white/50'>
       <div className='mr-auto'
       onClick={(e)=>{
         e.preventDefault()
