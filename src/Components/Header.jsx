@@ -107,7 +107,7 @@ function Header () {
           exit={{ opacity: 0, y: 0 }}
           className='hidden group-hover:block absolute top-[3.5rem] right-20 px-6 py-5 h-auto w-52 z-50 flex-col gap-2 items-center '
         >
-          <div className='bg-white/70 shadow-lg py-3 flex flex-col items-center'>
+          <div className='bg-white/70 shadow-lg py-3 flex flex-col items-center z-50'>
             <NavLink to={'/profile'}>
               <p className='text-black/70 hover:text-black/50 cursor-pointer py-1'>
                 Favourites
