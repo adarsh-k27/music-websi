@@ -19,7 +19,7 @@ export const SaveSong = async (data, contextState, btnState) => {
             })
         }
     } catch (error) {
-        console.log(error);
+        console.log("errr",error);
         toast.error("Something wrong happens",{
             theme:"dark"
         })

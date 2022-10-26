@@ -90,8 +90,7 @@ function CreateSong () {
       catogery: catogeryFilter
     }
     console.log("songData",data);
-    SaveSong(data, SongSave
-, setSaveSongBtn)
+    SaveSong(data, SongSave, setSaveSongBtn)
   }
 
   return (
